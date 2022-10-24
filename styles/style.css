@@ -1,0 +1,278 @@
+@import url(../styles/normalize.css);
+@import url(../fonts/inter.css);
+
+body {
+    background-color: #2A2C2F;
+    width: 100%;
+}
+
+.page {
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 3rem;
+
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.75;
+}
+
+.header__link_ru {
+    margin-right: 1rem;
+}
+
+.header__link_ru:hover {
+    text-decoration: underline;
+}
+
+.header__link_en:hover {
+    text-decoration: underline;
+}
+
+.lead {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5rem 9.25rem 0;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lead__title {
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 6.25rem;
+    margin-top: 0;
+    max-width: 45rem;
+}
+
+.lead__subtitle {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    max-width: 40rem;
+    margin-top: 2rem;
+}
+
+.lead__image {
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+.lead__polka {
+    max-width: 100%;
+}
+
+.lead__caption {
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    align-self: start;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 5.75rem 27.625rem 0 9.25rem;
+    max-width: 43rem;
+}
+
+.intro__title {
+    font-weight: 900;
+    font-size: 3.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.intro__text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+}
+
+.intro__list {
+    list-style: none;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    margin: 5.75rem 3rem 5.75rem;
+}
+
+.grid__item {
+    max-width: 100%;
+}
+
+.places {
+    color: white;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 29rem 1fr;
+    grid-gap: 2.5rem;
+    margin: 0 9.25rem 5rem;
+}
+
+.place__title {
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 29rem;
+}
+
+.place__website {
+    align-self: flex-end;
+}
+
+.place__website_link {
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 0.8rem;
+}
+
+.place__website_link:hover {
+    opacity: .8;
+    transition: 0.2s;
+}
+
+.place__url-heading {
+    color: #AAAAAA;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: 0.2em;
+}
+
+.place__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.place__paragraphs {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+}
+
+.place__paragraph {
+    margin: 0 0 1.5rem;
+}
+
+.cover {
+    margin: 5.75rem 3rem 0;
+    min-height: 46.25rem;
+    background-image: url(../images/cover-trains.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover__overlay {
+    color: white;
+    text-decoration: none;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover__overlay::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    background-color: #2A2C2F;
+    opacity: .3;
+    transition: 0.2s;
+    
+}
+  
+.cover__overlay:hover::after {
+    opacity: .8;
+}
+
+.cover__title {
+    font-weight: 900;
+    font-size: 4.5rem;
+    max-width: 35rem;
+    margin: auto;
+    z-index: 1;
+}
+
+.cover__subtitle {
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 22.5rem;
+    margin: 2rem auto 0;
+    z-index: 1;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 5.75rem 3rem 1.5rem;
+
+}
+
+.nav__footer {
+    align-self: center;
+}
+
+.nav__footer_link {
+    text-decoration: none;
+    color: white;
+    margin-right: 1.125rem;
+    font-size: 1rem;
+}
+
+.nav__footer_link:hover {
+    opacity: .8;
+    transition: 0.2s;
+}
+
+.nav__footer_link:last-child {
+    margin-right: 0;
+}
+
+.footer__copyright {
+    font-size: 0.875rem;
+}
